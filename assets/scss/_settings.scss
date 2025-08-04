@@ -1,0 +1,20 @@
+* {
+    font-family: "NotoSansKR";
+    outline: 0;
+}
+
+:where(html, body, #__nuxt) {
+    @apply w-full h-full;
+}
+
+body {
+    @apply bg-white text-slate-800;
+}
+
+input {
+    @apply outline-none;
+}
+
+a {
+    color: inherit;
+}

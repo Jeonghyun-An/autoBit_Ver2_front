@@ -1,0 +1,36 @@
+// Tailwind + PrimeVue SCSS 설정
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@use "./font";
+@use "./settings";
+@use "./primevue/module.scss";
+
+// PrimeVue 체크박스 커스텀 스타일
+.p-checkbox-checked .p-checkbox-box {
+    background-color: #3b82f6 !important; // blue-500
+}
+
+// 스크롤바 스타일
+::-webkit-scrollbar {
+    padding: 2rem 0;
+    width: 4px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+
+    &:hover {
+        @apply bg-gray-400;
+    }
+}
